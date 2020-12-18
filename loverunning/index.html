@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width initial-scale=1.0'>
+<meta name='description' content='Code Institute Mini Project'>
+<meta name='keywords' content=''>
+<meta name='author' content='Stephen Clarke: The Code Institute'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'/>
+<link rel='stylesheet' href='assets/css/loverunning.css'>
+<script src='assets/js/loverunning.js'></script>
+<title>Love Running</title>
+</head>
+<body onload='showMenuComponent("Home");'>
+<div class='bground'></div>
+<header>
+<a href='index.html'>
+<h2 id='logo'>Love Running</h2>
+</a>
+<nav class='top'>
+<ul id='menu'>
+<li>
+<button class='MenuButton' id='SignUpButton' onclick='showMenuComponent("SignUp")'>Sign Up</button>
+</li>
+<li>
+<button class='MenuButton' id='GalleryButton' onclick='showMenuComponent("Gallery")'>Gallery</button>
+</li>
+<li>
+<button class='MenuButton' id='HomeButton' onclick='showMenuComponent("Home")'>Home</button>
+</li>
+</ul>
+</nav>
+</header>
+<div class='MenuComponent' id='Home'>
+<header>
+<h1 class='Title'></h1>
+<h2 class='Strapline'></h2>
+</header>
+<section id='hero-outer'>
+<div id="hero-image"></div>
+<div id="cover-text">
+<h2>Love Running</h2>
+<h3>Dublin Docklands & Phoenix Park</h3>
+</div>
+</section>
+<section id='club-ethos'>
+<h2 id="welcome">Why Love Running with Us?</h2>
+<div id="left-about">
+
+<div class="left-about-heading"><h2> Feel Healthy <i class="fas fa-heartbeat"></i></h2>
+<hr>
+<p>Since it improves aerobic fitness, running is a great way to help improve your cardiovascular health. Plus, it burns calories and can build strength.</p>
+</div>
+     
+<div class="left-about-heading"><h2> Feel Free <i class="fab fa-fly"></i></h2>
+<hr>
+<p>Physical exercise, running included, is known to release endorphins in the brain. Endorphins make you more energetic, more awake and, yes, happier.</p>
+</div>
+
+</div>
+<div  id="right-about">
+<div class="right-about-heading"><h2> Get Social <i class="fas fa-globe"></i></h2>
+ <hr>
+ <p>When we run with others, we can run farther and faster more easily. Social running can pull you out of a running funk or low mood, inspire you to try new events</p>
+ </div>
+ <div class="right-about-heading"><h2> Feel Strong <i class="fas fa-dumbbell"></i></h2>
+  <hr>
+  <p>Running strengthens your heart by pumping blood more effectively through your body.</p>
+   </div>
+</div>
+<div  id="center-about">
+ <div id="circle-container">
+ <div id="circle-cover-bg"></div>
+ </div>
+</div>
+</section>
+<section id='times'>
+<div>
+    <h2>Urban <i class="fas fa-city"></i></h2>
+    <h3>Monday</h3>
+    <h3>5K</h3>
+    <h3>The Marker Hotel</h3>
+    <h3>18:30</h3>
+  </div>
+  <div>
+    <h2>Trail <i class="fas fa-tree"></i></h2>
+    <h3>Wednesday</h3>
+    <h3>10K</h3>
+    <h3>The Phoenix Park</h3>
+    <h3>18:30</h3>
+  </div>
+  <div>
+    <h2>Urban <i class="fas fa-city"></i></h2>
+    <h3>Friday</h3>
+    <h3>5K</h3>
+    <h3>The Marker Hotel</h3>
+    <h3>18:30</h3>
+  </div>
+  <div>
+    <h2>Trail <i class="fas fa-tree"></i></h2>
+    <h3>Saturday</h3>
+    <h3>10K</h3>
+    <h3>The Phoenix Park</h3>
+    <h3>09:30</h3>
+  </div>
+  <div>
+    <h2>Coffee <i class="fas fa-mug-hot"></i></h2>
+    <h3>Sunday</h3>
+    <h3>0K</h3>
+    <h3>The Marker Hotel</h3>
+    <h3>11:30</h3>
+  </div>
+</section>
+<article class='Default'><div class='iteminner'>
+</div>
+<div class='itemlink'>
+</div>
+</article>
+</div>
+<div class='MenuComponent' id='Gallery'>
+<header>
+<h1 class='Title'></h1>
+<h2 class='Strapline'></h2>
+</header>
+<section id='photo'>
+<img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/girls.jpg" alt="People after a run">
+<img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/man.jpg" alt="Person running">
+<img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/runner1.jpg alt="Runner in the Countryside">
+<img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/runner2.jpg" alt="Runners on a Beach">
+<img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/athletes.jpg" alt="Athletes Racing">
+<img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/runner3.jpg" alt="Runner by the Sea">
+<img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/running_gang.jpg"  alt="Group of Runners">
+<img src="assets/img/Runners_Legs.jpg"  alt="Athletes Legs">
+</section>
+</div>
+<div class='MenuComponent' id='SignUp'>
+<header>
+<h1 class='Title'></h1>
+<h2 class='Strapline'></h2>
+</header>
+<section id='form-section'>
+<form class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/LoveRunning.php" target="form-response">
+<h2>Let's get you signed up! <i class="fas fa-heartbeat"></i></i></h2>
+<label for="fname">First Name</label>
+<input class="text-input" id="fname" type="text" name="first_name" required>
+<label for="lname">Last Name</label>
+<input class="text-input" id="lname" type="text" name="last_name" required>
+<label for="email">Email Address</label>
+<input class="text-input" id="email" type="email" name="email_address" required>
+<label for="road">Road</label>
+<input class="radio-input" type="radio" id="road" name="running_preference" value="Road" required>
+<label for="trail">Trail</label>
+<input class="radio-input" type="radio" id="trail" name="running_preference" value="Trail">
+<label for="both">Both</label>
+<input class="radio-input" type="radio" id="both" name="running_preference" value="Road and Trail">
+<input id="join-button" class="join-button" type="submit" value="Let's Run!" onclick="formResponse()">
+<iframe name="form-response" id="form-response" scrolling="no"></iframe>
+</form>
+</section>
+</div>
+<footer>
+<ul class="social-networks">
+<li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+<li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+<li><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+<li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+</ul>
+<p class='enquiry'>For Enquiries Please Email: Stephen.J.Clarke@hotmail.co.uk</p>
+<p>Created by Stephen Clarke on behalf of The Code Institute 
+||&nbsp;Last update on 18/12/2020||&nbsp;<span id='HTMLSerNo'>0003</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+</body>
+</html>
